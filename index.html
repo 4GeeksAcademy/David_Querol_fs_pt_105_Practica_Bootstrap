@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Etiquetas meta requeridas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/3b256e6747.js" crossorigin="anonymous"></script>
+
+    <title>Instagram Post</title>
+    
+  </head>
+
+  <body>
+
+    <div class="container-lg-fluid p-0 container-xl">
+
+      <!-- NAVBAR -->
+
+      <nav class="navbar navbar-light bg-light col-12">    
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="30" height="30" class="d-inline-block align-text-top">
+            Instagram
+          </a>
+          <div> 
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalconfig">
+                Create a new post
+            </button>          
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear p-1"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="btnGroupDrop1">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacity and Data</a></li>
+                    <li><hr class="dropdown-divider" href="#"></li>
+                    <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- MODAL -->
+
+      <div class="modal fade" id="modalconfig" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Caption:</h6>
+              <textarea class="form-control" placeholder="Add the caption of your post here"
+                  id="floatingTextarea2"></textarea>
+              <div class="row p-2">
+                  <button class="col-1 border rounded p-1 m-1 btn-light">
+                      <i class="fa-solid fa-camera"></i>
+                  </button>
+                  <button class="col-1 border rounded p-1 m-1 btn-light">
+                      <i class="fa-solid fa-location-dot"></i>
+                  </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- TAB SELECTOR -->
+
+      <ul class="nav nav-pills justify-content-center pt-4" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+            class="fa-solid fa-square"></i></button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+
+      <!-- GIRD PHOTOS -->
+
+        <div class="tab-pane fade show active container-fluid pt-2" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="row">
+              <div class="col-sm-6 col-md-4 p-1">
+                <img src="https://picsum.photos/id/142/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/456/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/231/1000" class="img-fluid"/>
+              </div>      
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/576/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/12/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/123/1000" class="img-fluid"/>
+              </div>       
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/987/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/678/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/342/1000" class="img-fluid"/>
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                <img src="https://picsum.photos/id/898/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/656/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/167/1000" class="img-fluid"/>
+              </div>                  
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/383/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/56/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/295/1000" class="img-fluid"/>
+              </div>      
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/231/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/475/1000" class="img-fluid" />
+              </div>
+              <div class="col-sm-6 col-md-4 p-1">
+                  <img src="https://picsum.photos/id/785/1000" class="img-fluid"/>
+              </div>
+            </div>       
+        </div>
+
+      <!-- CARDS FULLSCREEN -->
+
+          <div class="tab-pane fade container-fluid pt-2" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">          
+            <div class="container d-flex flex-column align-items-center mt-2">      
+              <div class="card shadow w-xs-100 w-sm-75 w-md-50 w-lg-xl-xxl-45 mb-5">
+                <div class="card-body d-flex justify-content-between">
+                  <h4>Castillo de ensueño!</h4>
+                  <a>08/26</a>
+                </div>
+                <img src="https://picsum.photos/id/142/800/700" class="card-img-top" alt="Dog">
+                <div class="card-body">
+                  <p><strong>204 Likes</strong></p>
+                  <p>Este es un ejemplo de foto post en Instagram</p>
+                </div>
+              </div>
+              <div class="card shadow w-xs-100 w-sm-75 w-md-50 w-lg-xl-xxl-45 mb-5">
+                <div class="card-body d-flex justify-content-between">
+                  <h4>Tarde en el lago!</h4>
+                  <a>05/12</a>
+                </div>
+                <img src="https://picsum.photos/id/456/800/1000" class="card-img-top" alt="Dog">
+                <div class="card-body">
+                  <p><strong>124 Likes</strong></p>
+                  <p>Otro ejemplo de foto post en Instagram</p>
+                </div>
+              </div>
+              <div class="card shadow w-xs-100 w-sm-75 w-md-50 w-lg-xl-xxl-45 mb-5">
+                <div class="card-body d-flex justify-content-between">
+                  <h4>Montañas!</h4>
+                  <a>04/12</a>
+                </div>
+                <img src="https://picsum.photos/id/231/800/500" class="card-img-top" alt="Dog">
+                <div class="card-body">
+                  <p><strong>23 Likes</strong></p>
+                  <p>Este es un ejemplo de foto post en Instagram</p>
+                </div>
+              </div>
+              <div class="card shadow w-xs-100 w-sm-75 w-md-50 w-lg-xl-xxl-45 mb-5">
+                <div class="card-body d-flex justify-content-between">
+                  <h4>Fotografías del dron</h4>
+                  <a>01/33</a>
+                </div>
+                <img src="https://picsum.photos/id/576/800" class="card-img-top" alt="Dog">
+                <div class="card-body">
+                  <p><strong>124 Likes</strong></p>
+                  <p>Este es un ejemplo de foto post en Instagram</p>
+                </div>
+              </div>
+              <div class="card shadow w-xs-100 w-sm-75 w-md-50 w-lg-xl-xxl-45 mb-5">
+                <div class="card-body d-flex justify-content-between">
+                  <h4>Tarde de playa</h4>
+                  <a>12/22</a>
+                </div>
+                <img src="https://picsum.photos/id/12/800/500" class="card-img-top" alt="Dog">
+                <div class="card-body">
+                  <p><strong>201 Likes</strong></p>
+                  <p>Este es un ejemplo de foto post en Instagram</p>
+                </div>
+              </div>
+              <div class="card shadow w-xs-100 w-sm-75 w-md-50 w-lg-xl-xxl-45 mb-5">
+                <div class="card-body d-flex justify-content-between">
+                  <h4>Probando el macro</h4>
+                  <a>12/43</a>
+                </div>
+                <img src="https://picsum.photos/id/123/800/1000" class="card-img-top" alt="Dog">
+                <div class="card-body">
+                  <p><strong>204 Likes</strong></p>
+                  <p>Este es un ejemplo de foto post en Instagram</p>
+                </div>
+              </div>          
+            </div>
+        </div>
+      </div>
+
+      <!-- JavaScript opcional -->
+      <!-- Popper.js, luego Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+    </div>
+  </body>
+</html>
